@@ -40,69 +40,69 @@ const chenhao = {
 
 <table>
 <tr>
-<td width="50%" valign="top">
-
-<a href="https://github.com/twwch/JadeAI">
-  <img src="https://github-readme-stats.vercel.app/api/pin/?username=twwch&repo=JadeAI&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=F59E0B&icon_color=7C3AED" />
-</a>
-
-> 🎯 **AI 智能简历生成器** · 50+ 模板 · PDF 解析 · JD 匹配 · 一键 Docker 部署
-> `TypeScript` `Next.js` `OpenAI` `Docker`
-
+<td width="50%" align="center">
+  <a href="https://github.com/twwch/JadeAI">
+    <img src="https://opengraph.githubassets.com/1/twwch/JadeAI" width="100%" />
+  </a>
+  <p>🎯 <b>JadeAI</b> · AI 智能简历生成器 · 50+ 模板 · PDF 解析 · JD 匹配<br/>
+  <img src="https://img.shields.io/github/stars/twwch/JadeAI?style=flat-square&color=F59E0B&labelColor=0D1117"/>
+  <img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Next.js-000?style=flat-square&logo=nextdotjs"/>
+  </p>
 </td>
-<td width="50%" valign="top">
-
-<a href="https://github.com/twwch/DeepDiagram">
-  <img src="https://github-readme-stats.vercel.app/api/pin/?username=twwch&repo=DeepDiagram&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=F59E0B&icon_color=7C3AED" />
-</a>
-
-> 🧠 **自然语言 → 思维导图 / Mermaid / ECharts**，把想法秒变结构化视觉
-> `TypeScript` `LLM` `Mermaid` `ECharts`
-
-</td>
-</tr>
-<tr>
-<td width="50%" valign="top">
-
-<a href="https://github.com/twwch/AIComicBuilder">
-  <img src="https://github-readme-stats.vercel.app/api/pin/?username=twwch&repo=AIComicBuilder&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=F59E0B&icon_color=7C3AED" />
-</a>
-
-> 🎬 **AI 漫剧生成平台** · 剧本 → 角色 → 分镜 → 视频合成全自动
-> `TypeScript` `Video Gen` `Agent Workflow`
-
-</td>
-<td width="50%" valign="top">
-
-<a href="https://github.com/twwch/vibe-coding">
-  <img src="https://github-readme-stats.vercel.app/api/pin/?username=twwch&repo=vibe-coding&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=F59E0B&icon_color=7C3AED" />
-</a>
-
-> ✨ **Vibe Coding 实战手册** · 用 Claude Code 从零开发 AI 产品的完整记录
-> `Claude Code` `AI-Driven Dev` `Case Study`
-
+<td width="50%" align="center">
+  <a href="https://github.com/twwch/DeepDiagram">
+    <img src="https://opengraph.githubassets.com/1/twwch/DeepDiagram" width="100%" />
+  </a>
+  <p>🧠 <b>DeepDiagram</b> · 自然语言 → 思维导图 / Mermaid / ECharts<br/>
+  <img src="https://img.shields.io/github/stars/twwch/DeepDiagram?style=flat-square&color=F59E0B&labelColor=0D1117"/>
+  <img src="https://img.shields.io/badge/LLM-7C3AED?style=flat-square"/>
+  <img src="https://img.shields.io/badge/Mermaid-FF3670?style=flat-square&logo=mermaid&logoColor=white"/>
+  </p>
 </td>
 </tr>
 <tr>
-<td width="50%" valign="top">
-
-<a href="https://github.com/twwch/OpenSkills">
-  <img src="https://github-readme-stats.vercel.app/api/pin/?username=twwch&repo=OpenSkills&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=F59E0B&icon_color=7C3AED" />
-</a>
-
-> 🧩 **开源 Agent Skill 框架** · Progressive Disclosure 架构
-> `Python` `Agent` `Skill System`
-
+<td width="50%" align="center">
+  <a href="https://github.com/twwch/AIComicBuilder">
+    <img src="https://opengraph.githubassets.com/1/twwch/AIComicBuilder" width="100%" />
+  </a>
+  <p>🎬 <b>AIComicBuilder</b> · 剧本 → 角色 → 分镜 → 视频全自动<br/>
+  <img src="https://img.shields.io/github/stars/twwch/AIComicBuilder?style=flat-square&color=F59E0B&labelColor=0D1117"/>
+  <img src="https://img.shields.io/badge/Agent_Workflow-10B981?style=flat-square"/>
+  <img src="https://img.shields.io/badge/Video_Gen-DC382D?style=flat-square"/>
+  </p>
 </td>
-<td width="50%" valign="top">
-
-<a href="https://github.com/twwch/comfyui-workflow-skill">
-  <img src="https://github-readme-stats.vercel.app/api/pin/?username=twwch&repo=comfyui-workflow-skill&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=F59E0B&icon_color=7C3AED" />
-</a>
-
-> 🎨 **自然语言 → ComfyUI Workflow** · 34 模板 · 360+ 节点 · 支持 Flux/Wan/HunyuanVideo
-> `Skill` `ComfyUI` `AIGC`
-
+<td width="50%" align="center">
+  <a href="https://github.com/twwch/vibe-coding">
+    <img src="https://opengraph.githubassets.com/1/twwch/vibe-coding" width="100%" />
+  </a>
+  <p>✨ <b>vibe-coding</b> · Claude Code 从零开发 AI 产品完整记录<br/>
+  <img src="https://img.shields.io/github/stars/twwch/vibe-coding?style=flat-square&color=F59E0B&labelColor=0D1117"/>
+  <img src="https://img.shields.io/badge/Claude_Code-D97757?style=flat-square&logo=anthropic&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Case_Study-7C3AED?style=flat-square"/>
+  </p>
+</td>
+</tr>
+<tr>
+<td width="50%" align="center">
+  <a href="https://github.com/twwch/OpenSkills">
+    <img src="https://opengraph.githubassets.com/1/twwch/OpenSkills" width="100%" />
+  </a>
+  <p>🧩 <b>OpenSkills</b> · 开源 Agent Skill 框架 · Progressive Disclosure<br/>
+  <img src="https://img.shields.io/github/stars/twwch/OpenSkills?style=flat-square&color=F59E0B&labelColor=0D1117"/>
+  <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Agent-7C3AED?style=flat-square"/>
+  </p>
+</td>
+<td width="50%" align="center">
+  <a href="https://github.com/twwch/comfyui-workflow-skill">
+    <img src="https://opengraph.githubassets.com/1/twwch/comfyui-workflow-skill" width="100%" />
+  </a>
+  <p>🎨 <b>comfyui-workflow-skill</b> · NL → ComfyUI · 34 模板 · 360+ 节点<br/>
+  <img src="https://img.shields.io/github/stars/twwch/comfyui-workflow-skill?style=flat-square&color=F59E0B&labelColor=0D1117"/>
+  <img src="https://img.shields.io/badge/ComfyUI-000?style=flat-square"/>
+  <img src="https://img.shields.io/badge/AIGC-F59E0B?style=flat-square"/>
+  </p>
 </td>
 </tr>
 </table>
