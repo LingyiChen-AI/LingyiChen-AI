@@ -1,0 +1,90 @@
+name: Update README stats
+
+on:
+  schedule:
+    - cron: '17 */6 * * *'   # every 6 hours
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths: ['.github/workflows/update-stats.yml']
+
+permissions:
+  contents: write
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Compute totals and patch README
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          python3 - <<'PY'
+          import json, os, re, urllib.request
+
+          TOKEN = os.environ["GH_TOKEN"]
+          USER  = "twwch"
+
+          def gh(url):
+              req = urllib.request.Request(url, headers={
+                  "Authorization": f"Bearer {TOKEN}",
+                  "Accept": "application/vnd.github+json",
+                  "User-Agent": "readme-updater",
+              })
+              return json.loads(urllib.request.urlopen(req).read())
+
+          repos, page = [], 1
+          while True:
+              batch = gh(f"https://api.github.com/users/{USER}/repos?per_page=100&type=owner&page={page}")
+              if not batch: break
+              repos += batch
+              page += 1
+
+          stars = sum(r["stargazers_count"] for r in repos)
+          count = len(repos)
+
+          def fmt(n):
+              if n >= 1000:
+                  return f"{n/1000:.1f}k".rstrip("0").rstrip(".") + "+"
+              return str(n)
+
+          stars_str = fmt(stars)
+          print(f"repos={count} stars={stars} -> {stars_str}")
+
+          with open("README.md", encoding="utf-8") as f:
+              md = f.read()
+
+          badge = (
+              f'<!-- TOTAL_STARS_BADGE_START --><img src="'
+              f'https://img.shields.io/badge/Total%20Stars-{stars_str.replace("+","%2B")}'
+              f'-F59E0B?style=for-the-badge&labelColor=0D1117" /><!-- TOTAL_STARS_BADGE_END -->'
+          )
+          md = re.sub(
+              r"<!-- TOTAL_STARS_BADGE_START -->.*?<!-- TOTAL_STARS_BADGE_END -->",
+              badge, md, flags=re.S)
+
+          line = (
+              f"<!-- STATS_LINE_START -->开源 **{count}** 仓库，"
+              f"累计 **{stars_str}** stars<!-- STATS_LINE_END -->"
+          )
+          md = re.sub(
+              r"<!-- STATS_LINE_START -->.*?<!-- STATS_LINE_END -->",
+              line, md, flags=re.S)
+
+          with open("README.md", "w", encoding="utf-8") as f:
+              f.write(md)
+          PY
+
+      - name: Commit if changed
+        run: |
+          if [[ -n "$(git status --porcelain README.md)" ]]; then
+            git config user.name  "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add README.md
+            git commit -m "chore: auto-update stars [skip ci]"
+            git push
+          else
+            echo "no changes"
+          fi
