@@ -45,12 +45,7 @@ jobs:
           stars = sum(r["stargazers_count"] for r in repos)
           count = len(repos)
 
-          def fmt(n):
-              if n >= 1000:
-                  return f"{n/1000:.1f}k".rstrip("0").rstrip(".") + "+"
-              return str(n)
-
-          stars_str = fmt(stars)
+          stars_str = str(stars)
           print(f"repos={count} stars={stars} -> {stars_str}")
 
           with open("README.md", encoding="utf-8") as f:
@@ -58,7 +53,7 @@ jobs:
 
           badge = (
               f'<!-- TOTAL_STARS_BADGE_START --><img src="'
-              f'https://img.shields.io/badge/Total%20Stars-{stars_str.replace("+","%2B")}'
+              f'https://img.shields.io/badge/Total%20Stars-{stars_str}'
               f'-F59E0B?style=for-the-badge&labelColor=0D1117" /><!-- TOTAL_STARS_BADGE_END -->'
           )
           md = re.sub(
