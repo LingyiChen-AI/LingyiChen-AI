@@ -25,7 +25,48 @@ jobs:
           import json, os, re, urllib.request
 
           TOKEN = os.environ["GH_TOKEN"]
-          USER  = "twwch"
+          USER  = "LingyiChen-AI"
+          TOP_N = 10
+
+          # Per-project styling overrides. Order in README is by live star count;
+          # this dict only controls visuals (emoji, custom blurb, tech badges).
+          # Unknown repos fall back to GitHub description + primary language badge.
+          STYLES = {
+              "JadeAI":                 {"emoji": "🎯", "desc": "AI 智能简历生成器 · 50+ 模板 · PDF 解析 · JD 匹配",
+                                         "badges": [("TypeScript", "3178C6", "typescript"), ("Next.js", "000", "nextdotjs")]},
+              "AIComicBuilder":         {"emoji": "🎬", "desc": "剧本 → 角色 → 分镜 → 视频全自动",
+                                         "badges": [("Agent_Workflow", "10B981", None), ("Video_Gen", "DC382D", None)]},
+              "DeepDiagram":            {"emoji": "🧠", "desc": "自然语言 → 思维导图 / Mermaid / ECharts",
+                                         "badges": [("LLM", "7C3AED", None), ("Mermaid", "FF3670", "mermaid")]},
+              "vibe-coding":            {"emoji": "✨", "desc": "Claude Code 从零开发 AI 产品完整记录",
+                                         "badges": [("Claude_Code", "D97757", "anthropic"), ("Case_Study", "7C3AED", None)]},
+              "comfyui-workflow-skill": {"emoji": "🎨", "desc": "NL → ComfyUI · 34 模板 · 360+ 节点",
+                                         "badges": [("ComfyUI", "000", None), ("AIGC", "F59E0B", None)]},
+              "boris-prompts":          {"emoji": "📝", "desc": "Claude Code 作者 Boris 的 prompt 方法论实践",
+                                         "badges": [("Prompt_Eng", "7C3AED", None), ("LLM", "412991", "openai")]},
+              "Mako":                   {"emoji": "😎", "desc": "在线表情包制作与分享 · 图片上传 / 文字 / 特效",
+                                         "badges": [("TypeScript", "3178C6", "typescript"), ("Canvas", "FF6F61", None)]},
+              "workflow-skill":         {"emoji": "⚙️", "desc": "一句话 → Coze / Dify / ComfyUI 工作流 DSL",
+                                         "badges": [("Python", "3776AB", "python"), ("Agent", "7C3AED", None)]},
+              "OpenSkills":             {"emoji": "🧩", "desc": "开源 Agent Skill 框架 · Progressive Disclosure",
+                                         "badges": [("Python", "3776AB", "python"), ("Agent", "7C3AED", None)]},
+              "next-chat-skills":       {"emoji": "💬", "desc": "Next.js AI 助手 · Skill 自主调用 · 黑盒执行",
+                                         "badges": [("Next.js", "000", "nextdotjs"), ("Skills", "10B981", None)]},
+              "image-prompts":          {"emoji": "🖼️", "desc": "收集各种优秀 prompt",
+                                         "badges": [("Prompt", "7C3AED", None)]},
+              "AI-Tracker":             {"emoji": "📡", "desc": "AI 动态追踪 · 工具 / Skills / 项目 / 资讯",
+                                         "badges": [("AI_News", "10B981", None)]},
+              "next-k8s-admin":         {"emoji": "🛰️", "desc": "多集群 K8s 管理平台 · RBAC · 实时终端",
+                                         "badges": [("Kubernetes", "326CE5", "kubernetes"), ("TypeScript", "3178C6", "typescript")]},
+              "PDFVisualTranslator":    {"emoji": "📄", "desc": "Gemini 驱动的视觉感知 PDF 翻译 · 保留原始排版",
+                                         "badges": [("Gemini", "4285F4", "google"), ("TypeScript", "3178C6", "typescript")]},
+          }
+
+          LANG_COLORS = {
+              "TypeScript": "3178C6", "JavaScript": "F7DF1E", "Python": "3776AB",
+              "Go": "00ADD8", "Rust": "000000", "Java": "ED8B00",
+              "HTML": "E34F26", "Shell": "89E051", "Vue": "4FC08D",
+          }
 
           def gh(url):
               req = urllib.request.Request(url, headers={
@@ -52,12 +93,61 @@ jobs:
           stars_str = fmt(stars)
           print(f"repos={count} stars={stars} -> {stars_str}")
 
+          # Pick top N (exclude forks + the profile repo itself), sort by stars desc.
+          ranked = [r for r in repos if not r.get("fork") and r["name"] != USER]
+          ranked.sort(key=lambda r: (-r["stargazers_count"], r["name"].lower()))
+          top = ranked[:TOP_N]
+
+          def badge_img(label, color, logo):
+              label_url = label.replace(" ", "%20")
+              src = f"https://img.shields.io/badge/{label_url}-{color}?style=flat-square"
+              if logo:
+                  src += f"&logo={logo}&logoColor=white"
+              return f'<img src="{src}"/>'
+
+          def card(repo):
+              name = repo["name"]
+              meta = STYLES.get(name, {})
+              emoji = meta.get("emoji", "🚀")
+              desc = meta.get("desc") or (repo.get("description") or "").strip().split("\n")[0][:80] or name
+              badges = meta.get("badges")
+              if badges is None:
+                  lang = (repo.get("language") or "").strip()
+                  if lang:
+                      color = LANG_COLORS.get(lang, "7C3AED")
+                      badges = [(lang, color, lang.lower() if lang in LANG_COLORS else None)]
+                  else:
+                      badges = []
+              star_badge = (
+                  f'<img src="https://img.shields.io/github/stars/{USER}/{name}'
+                  f'?style=flat-square&color=F59E0B&labelColor=0D1117&label=%E2%98%85"/>'
+              )
+              tech = "\n  ".join(badge_img(l, c, lg) for (l, c, lg) in badges)
+              return (
+                  f'<td width="50%" align="center">\n'
+                  f'  <a href="https://github.com/{USER}/{name}">\n'
+                  f'    <img src="https://opengraph.githubassets.com/1/{USER}/{name}" width="100%" />\n'
+                  f'  </a>\n'
+                  f'  <p>{emoji} <b>{name}</b> · {desc}<br/>\n'
+                  f'  {star_badge}\n'
+                  f'  {tech}\n'
+                  f'  </p>\n'
+                  f'</td>'
+              )
+
+          rows = []
+          for i in range(0, len(top), 2):
+              pair = top[i:i+2]
+              cells = "\n".join(card(r) for r in pair)
+              rows.append(f"<tr>\n{cells}\n</tr>")
+          table = "<table>\n" + "\n".join(rows) + "\n</table>"
+
           with open("README.md", encoding="utf-8") as f:
               md = f.read()
 
           badge = (
               f'<!-- TOTAL_STARS_BADGE_START --><img src="'
-              f'https://img.shields.io/badge/Total%20Stars-{stars_str.replace("+","%2B")}'
+              f'https://img.shields.io/badge/%E2%98%85%20TOTAL%20STARS-{stars_str.replace("+","%2B")}'
               f'-F59E0B?style=for-the-badge&labelColor=0D1117" /><!-- TOTAL_STARS_BADGE_END -->'
           )
           md = re.sub(
@@ -71,6 +161,12 @@ jobs:
           md = re.sub(
               r"<!-- STATS_LINE_START -->.*?<!-- STATS_LINE_END -->",
               line, md, flags=re.S)
+
+          md = re.sub(
+              r"<!-- TOP_PROJECTS_START -->.*?<!-- TOP_PROJECTS_END -->",
+              f"<!-- TOP_PROJECTS_START -->\n{table}\n<!-- TOP_PROJECTS_END -->",
+              md, flags=re.S,
+          )
 
           with open("README.md", "w", encoding="utf-8") as f:
               f.write(md)
