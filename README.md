@@ -18,8 +18,6 @@
   <img src="https://komarev.com/ghpvc/?username=LingyiChen-AI&style=for-the-badge&color=10B981&labelColor=0D1117&label=VIEWS" />
 </p>
 
-<img src="./assets/hr.svg" width="100%" />
-
 </div>
 
 <br/>
@@ -42,7 +40,7 @@ const chenhao = {
 > **`▹`** 🧰 **全栈工程** — Next.js / Node / Python / K8s，端到端交付
 > **`▹`** 🌱 <!-- STATS_LINE_START -->开源 **54** 仓库，累计 **5.5k+** stars<!-- STATS_LINE_END -->，代表作均已 Docker 一键部署
 
-<div align="center"><img src="./assets/hr.svg" width="100%" /></div>
+<br/>
 
 ### `▸ TOP_PROJECTS.LIVE` &nbsp; <sub>`★ sorted by live stars · auto-refresh / 6h`</sub>
 
@@ -165,9 +163,9 @@ const chenhao = {
 
 <sub>💡 想看全部仓库？访问 <a href="https://github.com/LingyiChen-AI?tab=repositories"><code>github.com/LingyiChen-AI?tab=repositories</code></a></sub>
 
-<img src="./assets/hr.svg" width="100%" />
-
 </div>
+
+<br/>
 
 ### `▸ STACK.LOADED` &nbsp; <sub>`// arsenal`</sub>
 
@@ -186,9 +184,9 @@ const chenhao = {
 <img src="https://img.shields.io/badge/ComfyUI-000?style=for-the-badge" />
 <img src="https://img.shields.io/badge/Agent-00F0FF?style=for-the-badge&labelColor=0D1117&color=00F0FF" />
 
-<img src="./assets/hr.svg" width="100%" />
-
 </div>
+
+<br/>
 
 ### `▸ METRICS.LIVE` &nbsp; <sub>`// signal stream`</sub>
 
@@ -209,9 +207,9 @@ const chenhao = {
 
 <img src="https://github-readme-activity-graph.vercel.app/graph?username=LingyiChen-AI&theme=tokyo-night&hide_border=true&bg_color=0D1117&color=00F0FF&line=7C3AED&point=F59E0B&area=true&area_color=7C3AED" width="98%" />
 
-<img src="./assets/hr.svg" width="100%" />
-
 </div>
+
+<br/>
 
 ### `▸ PHILOSOPHY` &nbsp; <sub>`// the why`</sub>
 
@@ -226,7 +224,7 @@ const chenhao = {
 └──────────────────────────────────────────────────────────────────┘
 ```
 
-<div align="center"><img src="./assets/hr.svg" width="100%" /></div>
+<br/>
 
 ### `▸ COMMUNITY.JOIN` &nbsp; <sub>`// connect`</sub>
 
