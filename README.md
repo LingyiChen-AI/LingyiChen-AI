@@ -114,16 +114,6 @@ const chenhao = {
 </tr>
 <tr>
 <td width="50%" align="center">
-  <a href="https://github.com/LingyiChen-AI/Mako">
-    <img src="https://opengraph.githubassets.com/1/LingyiChen-AI/Mako" width="100%" />
-  </a>
-  <p>😎 <b>Mako</b> · 在线表情包制作与分享 · 图片上传 / 文字 / 特效<br/>
-  <img src="https://img.shields.io/github/stars/LingyiChen-AI/Mako?style=flat-square&color=F59E0B&labelColor=0D1117&label=%E2%98%85"/>
-  <img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white"/>
-  <img src="https://img.shields.io/badge/Canvas-FF6F61?style=flat-square"/>
-  </p>
-</td>
-<td width="50%" align="center">
   <a href="https://github.com/LingyiChen-AI/workflow-skill">
     <img src="https://opengraph.githubassets.com/1/LingyiChen-AI/workflow-skill" width="100%" />
   </a>
@@ -131,6 +121,16 @@ const chenhao = {
   <img src="https://img.shields.io/github/stars/LingyiChen-AI/workflow-skill?style=flat-square&color=F59E0B&labelColor=0D1117&label=%E2%98%85"/>
   <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white"/>
   <img src="https://img.shields.io/badge/Agent-7C3AED?style=flat-square"/>
+  </p>
+</td>
+<td width="50%" align="center">
+  <a href="https://github.com/LingyiChen-AI/Mako">
+    <img src="https://opengraph.githubassets.com/1/LingyiChen-AI/Mako" width="100%" />
+  </a>
+  <p>😎 <b>Mako</b> · 在线表情包制作与分享 · 图片上传 / 文字 / 特效<br/>
+  <img src="https://img.shields.io/github/stars/LingyiChen-AI/Mako?style=flat-square&color=F59E0B&labelColor=0D1117&label=%E2%98%85"/>
+  <img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Canvas-FF6F61?style=flat-square"/>
   </p>
 </td>
 </tr>
