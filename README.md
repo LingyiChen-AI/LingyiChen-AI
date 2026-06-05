@@ -13,7 +13,7 @@
 
 <p>
   <a href="https://github.com/LingyiChen-AI?tab=followers"><img src="https://img.shields.io/github/followers/LingyiChen-AI?label=FOLLOWERS&style=for-the-badge&color=7C3AED&labelColor=0D1117&logo=github" /></a>
-  <!-- TOTAL_STARS_BADGE_START --><img src="https://img.shields.io/badge/%E2%98%85%20TOTAL%20STARS-5.7k%2B-F59E0B?style=for-the-badge&labelColor=0D1117" /><!-- TOTAL_STARS_BADGE_END -->
+  <!-- TOTAL_STARS_BADGE_START --><img src="https://img.shields.io/badge/%E2%98%85%20TOTAL%20STARS-5.8k%2B-F59E0B?style=for-the-badge&labelColor=0D1117" /><!-- TOTAL_STARS_BADGE_END -->
   <img src="https://img.shields.io/badge/%E2%97%86%20VIBE%20CODING-ENGAGED-00F0FF?style=for-the-badge&labelColor=0D1117" />
   <img src="https://komarev.com/ghpvc/?username=LingyiChen-AI&style=for-the-badge&color=10B981&labelColor=0D1117&label=VIEWS" />
 </p>
@@ -38,7 +38,7 @@ const chenhao = {
 > **`▹`** 🧠 **Vibe Coding 深度实践者** — 从零用 Claude Code 搭建完整产品，代表作 [`vibe-coding`](https://github.com/LingyiChen-AI/vibe-coding)
 > **`▹`** 🤖 **AI 应用 / Agent 架构** — 专注 LLM × 工作流 × Skill System × MCP
 > **`▹`** 🧰 **全栈工程** — Next.js / Node / Python / K8s，端到端交付
-> **`▹`** 🌱 <!-- STATS_LINE_START -->开源 **54** 仓库，累计 **5.7k+** stars<!-- STATS_LINE_END -->，代表作均已 Docker 一键部署
+> **`▹`** 🌱 <!-- STATS_LINE_START -->开源 **54** 仓库，累计 **5.8k+** stars<!-- STATS_LINE_END -->，代表作均已 Docker 一键部署
 
 <br/>
 
