@@ -146,13 +146,12 @@ const chenhao = {
   </p>
 </td>
 <td width="50%" align="center">
-  <a href="https://github.com/LingyiChen-AI/next-chat-skills">
-    <img src="https://opengraph.githubassets.com/1/LingyiChen-AI/next-chat-skills" width="100%" />
+  <a href="https://github.com/LingyiChen-AI/image-prompts">
+    <img src="https://opengraph.githubassets.com/1/LingyiChen-AI/image-prompts" width="100%" />
   </a>
-  <p>💬 <b>next-chat-skills</b> · Next.js AI 助手 · Skill 自主调用 · 黑盒执行<br/>
-  <img src="https://img.shields.io/github/stars/LingyiChen-AI/next-chat-skills?style=flat-square&color=F59E0B&labelColor=0D1117&label=%E2%98%85"/>
-  <img src="https://img.shields.io/badge/Next.js-000?style=flat-square&logo=nextdotjs&logoColor=white"/>
-  <img src="https://img.shields.io/badge/Skills-10B981?style=flat-square"/>
+  <p>🖼️ <b>image-prompts</b> · 收集各种优秀 prompt<br/>
+  <img src="https://img.shields.io/github/stars/LingyiChen-AI/image-prompts?style=flat-square&color=F59E0B&labelColor=0D1117&label=%E2%98%85"/>
+  <img src="https://img.shields.io/badge/Prompt-7C3AED?style=flat-square"/>
   </p>
 </td>
 </tr>
