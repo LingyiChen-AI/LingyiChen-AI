@@ -136,6 +136,15 @@ const chenhao = {
 </tr>
 <tr>
 <td width="50%" align="center">
+  <a href="https://github.com/LingyiChen-AI/image-prompts">
+    <img src="https://opengraph.githubassets.com/1/LingyiChen-AI/image-prompts" width="100%" />
+  </a>
+  <p>🖼️ <b>image-prompts</b> · 收集各种优秀 prompt<br/>
+  <img src="https://img.shields.io/github/stars/LingyiChen-AI/image-prompts?style=flat-square&color=F59E0B&labelColor=0D1117&label=%E2%98%85"/>
+  <img src="https://img.shields.io/badge/Prompt-7C3AED?style=flat-square"/>
+  </p>
+</td>
+<td width="50%" align="center">
   <a href="https://github.com/LingyiChen-AI/OpenSkills">
     <img src="https://opengraph.githubassets.com/1/LingyiChen-AI/OpenSkills" width="100%" />
   </a>
@@ -143,15 +152,6 @@ const chenhao = {
   <img src="https://img.shields.io/github/stars/LingyiChen-AI/OpenSkills?style=flat-square&color=F59E0B&labelColor=0D1117&label=%E2%98%85"/>
   <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white"/>
   <img src="https://img.shields.io/badge/Agent-7C3AED?style=flat-square"/>
-  </p>
-</td>
-<td width="50%" align="center">
-  <a href="https://github.com/LingyiChen-AI/image-prompts">
-    <img src="https://opengraph.githubassets.com/1/LingyiChen-AI/image-prompts" width="100%" />
-  </a>
-  <p>🖼️ <b>image-prompts</b> · 收集各种优秀 prompt<br/>
-  <img src="https://img.shields.io/github/stars/LingyiChen-AI/image-prompts?style=flat-square&color=F59E0B&labelColor=0D1117&label=%E2%98%85"/>
-  <img src="https://img.shields.io/badge/Prompt-7C3AED?style=flat-square"/>
   </p>
 </td>
 </tr>
