@@ -102,18 +102,6 @@ const chenhao = {
   </p>
 </td>
 <td width="50%" align="center">
-  <a href="https://github.com/LingyiChen-AI/workflow-skill">
-    <img src="https://opengraph.githubassets.com/1/LingyiChen-AI/workflow-skill" width="100%" />
-  </a>
-  <p>⚙️ <b>workflow-skill</b> · 一句话 → Coze / Dify / ComfyUI 工作流 DSL<br/>
-  <img src="https://img.shields.io/github/stars/LingyiChen-AI/workflow-skill?style=flat-square&color=F59E0B&labelColor=0D1117&label=%E2%98%85"/>
-  <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white"/>
-  <img src="https://img.shields.io/badge/Agent-7C3AED?style=flat-square"/>
-  </p>
-</td>
-</tr>
-<tr>
-<td width="50%" align="center">
   <a href="https://github.com/LingyiChen-AI/boris-prompts">
     <img src="https://opengraph.githubassets.com/1/LingyiChen-AI/boris-prompts" width="100%" />
   </a>
@@ -121,6 +109,18 @@ const chenhao = {
   <img src="https://img.shields.io/github/stars/LingyiChen-AI/boris-prompts?style=flat-square&color=F59E0B&labelColor=0D1117&label=%E2%98%85"/>
   <img src="https://img.shields.io/badge/Prompt_Eng-7C3AED?style=flat-square"/>
   <img src="https://img.shields.io/badge/LLM-412991?style=flat-square&logo=openai&logoColor=white"/>
+  </p>
+</td>
+</tr>
+<tr>
+<td width="50%" align="center">
+  <a href="https://github.com/LingyiChen-AI/workflow-skill">
+    <img src="https://opengraph.githubassets.com/1/LingyiChen-AI/workflow-skill" width="100%" />
+  </a>
+  <p>⚙️ <b>workflow-skill</b> · 一句话 → Coze / Dify / ComfyUI 工作流 DSL<br/>
+  <img src="https://img.shields.io/github/stars/LingyiChen-AI/workflow-skill?style=flat-square&color=F59E0B&labelColor=0D1117&label=%E2%98%85"/>
+  <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Agent-7C3AED?style=flat-square"/>
   </p>
 </td>
 <td width="50%" align="center">
