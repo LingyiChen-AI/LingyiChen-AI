@@ -145,13 +145,12 @@ const chenhao = {
   </p>
 </td>
 <td width="50%" align="center">
-  <a href="https://github.com/LingyiChen-AI/OpenSkills">
-    <img src="https://opengraph.githubassets.com/1/LingyiChen-AI/OpenSkills" width="100%" />
+  <a href="https://github.com/LingyiChen-AI/huiyi">
+    <img src="https://opengraph.githubassets.com/1/LingyiChen-AI/huiyi" width="100%" />
   </a>
-  <p>🧩 <b>OpenSkills</b> · 开源 Agent Skill 框架 · Progressive Disclosure<br/>
-  <img src="https://img.shields.io/github/stars/LingyiChen-AI/OpenSkills?style=flat-square&color=F59E0B&labelColor=0D1117&label=%E2%98%85"/>
-  <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white"/>
-  <img src="https://img.shields.io/badge/Agent-7C3AED?style=flat-square"/>
+  <p>🚀 <b>huiyi</b> · 会译：Windows 上的 AI 会议助手——实时字幕与翻译、发言人区分、AI 纪要、同声传译<br/>
+  <img src="https://img.shields.io/github/stars/LingyiChen-AI/huiyi?style=flat-square&color=F59E0B&labelColor=0D1117&label=%E2%98%85"/>
+  <img src="https://img.shields.io/badge/C#-7C3AED?style=flat-square"/>
   </p>
 </td>
 </tr>
